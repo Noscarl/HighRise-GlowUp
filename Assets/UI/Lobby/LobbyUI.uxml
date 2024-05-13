@@ -6,10 +6,27 @@
     xmlns:editor="UnityEditor.UIElements"
     xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
 >
-
- <hr:UILuaView class="lobby-u-i" picking-mode="Ignore">
-    <hr:UILabel name="myLabel" picking-mode="Ignore">
-    </hr:UILabel>
+<hr:UILuaView class="lobby-u-i" picking-mode="Ignore">
+    <VisualElement name="mainContainer" class="main-container" picking-mode="Ignore">
+        <VisualElement name="titleContainer" class="title-container" picking-mode="Ignore">
+            <hr:UILabel name="titleLabel" text="Title Label" class="title-label" picking-mode="Ignore">
+            </hr:UILabel>
+            <hr:UILabel name="descriptionLabel" text="Description Label" class="description-label" picking-mode="Ignore">
+            </hr:UILabel>
+        </VisualElement>
+        <VisualElement name="characterContainer" class="character-container" picking-mode="Ignore">
+            <!-- Character representation here -->
+        </VisualElement>
+        <VisualElement name="namesContainer" class="names-container" picking-mode="Ignore">
+            <hr:UILabel name="nameLabel1" text="Name 1" class="name-label" picking-mode="Ignore">
+            </hr:UILabel>
+            <hr:UILabel name="nameLabel2" text="Name 2" class="name-label" picking-mode="Ignore">
+            </hr:UILabel>
+            <hr:UILabel name="nameLabel3" text="Name 3" class="name-label" picking-mode="Ignore">
+            </hr:UILabel>
+            <hr:UILabel name="nameLabel4" text="Name 4" class="name-label" picking-mode="Ignore">
+            </hr:UILabel>
+        </VisualElement>
+    </VisualElement>
 </hr:UILuaView>
-
 </UXML>

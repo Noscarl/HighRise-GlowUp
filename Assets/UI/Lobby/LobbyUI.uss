@@ -1,11 +1,46 @@
-.lobby-u-i {
-    -unity-text-align: middle-center;
-    margin-top: auto;
-    background-color: rgba(255,255,255,0.75);
+/* Ensures that the main container fills the entire parent, usually the viewport */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
-.lobby-u-i #myLabel{
-    color: rgba(0,0,0,1);
-    font-size: 200%;
-    letter-spacing: 5%;
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%; /* Adjusts width as a percentage of the parent container */
+    height: 20%; /* Adjusts height as a percentage of the parent container */
+}
+
+.character-container {
+    width: 20%;
+    min-width: 150px; /* Ensures the container doesn't become too small */
+    max-width: 300px; /* Prevents the container from becoming too large */
+    height: 40%;
+    min-height: 200px;
+    max-height: 400px;
+    background-image: url('path/to/character/image');
+    background-size: cover;
+}
+
+
+.names-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.name-label {
+    flex: 1; /* Each name label will take equal space within the names container */
+    text-align: center;
+    background-color: #666;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
 }
