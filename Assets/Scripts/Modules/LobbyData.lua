@@ -20,6 +20,7 @@ local runwayCategories = {
     "Mix and Match"
 }
 
+players = {}
 
 function setPlayerCount(player)
     lobbyPlayerCount = player
