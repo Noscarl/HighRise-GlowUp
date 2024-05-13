@@ -1,0 +1,11 @@
+.lobby-u-i {
+    -unity-text-align: middle-center;
+    margin-top: auto;
+    background-color: rgba(255,255,255,0.75);
+}
+
+.lobby-u-i #myLabel{
+    color: rgba(0,0,0,1);
+    font-size: 200%;
+    letter-spacing: 5%;
+}
